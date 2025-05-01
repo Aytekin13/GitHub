@@ -9,243 +9,6 @@ namespace GitHub_1
         static void Main(string[] args)
         {
           Console.OutputEncoding = Encoding.UTF8;
-
-
-            //Loops
-            #region TASK1
-            /*int sagird_sayi=Convert.ToInt32(Console.ReadLine());
-           
-            for(int i=1;i<=sagird_sayi;i++)
-            {
-                
-                Console.Write(i+ ",");
-            }*/
-            #endregion
-
-            #region TASK2
-            /* int N=int.Parse(Console.ReadLine());
-             int cem=0;
-             if (N > 0 && N <= 100)
-             {
-                 for (int i = 0; i <= N; i++)
-                 {
-                     if (i % 2 == 1)
-                     {
-                         Console.Write(i+"  ");
-                         cem = cem + i; }
-                 }
-             Console.WriteLine();
-               Console.WriteLine("Tek ededlerin cemi=" + cem);
-             }*/
-
-            #endregion
-
-            #region TASK3
-            /* Console.WriteLine("Eded daxil edin");
-             int s=int.Parse(Console.ReadLine());
-             Console.WriteLine("Ededin reqemlerinin sayi");
-             int n=int.Parse(Console.ReadLine());
-             if (n == 1)
-             {
-                 for (int i = 0; i <= 9; i++)
-                 { 
-
-                     if (s == i)
-                     { Console.WriteLine(i); }
-
-                 }
-             }
-             else if (n == 2)
-             {
-                 for (int i = 10; i <= 99; i++)
-                 {
-                     int eded = i;
-                     int cem = 0;
-                     while (eded > 0)
-                     {
-                         cem += eded % 10;
-                         eded /= 10;
-                     }
-                     if (cem==s)
-                     { Console.WriteLine(i); }
-
-                 }
-             }
-             else if (n == 3)
-             {
-                 for (int i = 100; i <= 999; i++)
-                 {
-                     int eded = i;
-                     int cem = 0;
-                     while (eded > 0)
-                     {
-                         cem += eded % 10;
-                         eded /= 10;
-                     }
-                     if (cem == s)
-                     { Console.WriteLine(i); }
-
-                 }
-             }
-             else if (n == 4)
-             {
-                 for (int i = 1000; i <= 9999; i++)
-                 {
-                     int eded = i;
-                     int cem = 0;
-                     while (eded > 0)
-                     {
-                         cem += eded % 10;
-                         eded /= 10;
-                     }
-                     if (cem == s)
-                     { Console.WriteLine(i); }
-
-                 }
-             }
-             else if (n == 5)
-             {
-                 for (int i = 10000; i <= 99999; i++)
-                 {
-                     int eded = i;
-                     int cem = 0;
-                     while (eded > 0)
-                     {
-                         cem += eded % 10;
-                         eded /= 10;
-                     }
-                     if (cem == s)
-                     { Console.WriteLine(i); }
-
-                 }
-             }
-             else if (n == 6)
-             {
-                 for (int i = 100000; i <= 999999; i++)
-                 {
-                     int eded = i;
-                     int cem = 0;
-                     while (eded > 0)
-                     {
-                         cem += eded % 10;
-                         eded /= 10;
-                     }
-                     if (cem == s)
-                     { Console.WriteLine(i); }
-
-                 }
-             }*/
-            #endregion
-
-            #region TASK4
-            /*Console.WriteLine("Birinci ededi daxil edin");
-            int num1 = Convert.ToInt32((Console.ReadLine()));
-            Console.WriteLine("Ikinci ededi daxil edin");
-            int num2 = Convert.ToInt32((Console.ReadLine()));
-            double a, b;
-            for(int i = num1; i <= num2; i++)
-            {
-                a = Math.Pow(i,2);
-                b = Math.Pow(i, 3);
-                Console.WriteLine("Eded   "+i+"  "+"Ededin kvadrati   "+a+"   "+"Ededin kubu   "+b);
-            }*/
-            #endregion
-
-            #region TASK5
-            /*int n=int.Parse(Console.ReadLine());
-            Console.WriteLine();
-            double a;
-            for(int i=1; i <= n; i++)
-            {
-                a = Math.Pow(i, 2);
-                if (a < n)
-                Console.WriteLine(a);
-            }*/
-
-            #endregion
-
-            #region TASK6
-            /*Console.WriteLine("Eded daxil edin");
-            int n = int.Parse(Console.ReadLine());
-            Console.WriteLine("Reqemi daxil edin");
-            int a=int.Parse(Console.ReadLine());
-            int say = 0,b;
-           
-            while (n >0)
-            {
-                b = n % 10;
-                n = n / 10;
-                if (b == a)
-                { say = say + 1; }
-            }
-            Console.WriteLine("Reqemin sayi   " + say);*/
-            #endregion
-
-            #region TASK7
-            /* Console.WriteLine("Birinci ededi daxil edin");
-             int a=Convert.ToInt32(Console.ReadLine());
-             Console.WriteLine("Ikinci ededi daxil edin");
-             int b = Convert.ToInt32(Console.ReadLine());
-             int cem=0;
-             for (int i = a; i <= b; i++)
-             {
-                 cem = cem + i;
-             }
-             Console.WriteLine("Cem   " + cem);*/
-            #endregion
-
-            #region TASK8
-            /* Console.Write("n ededini daxil edin: ");
-             int n = int.Parse(Console.ReadLine());
-             int say = 0;
-
-             for (int i = 1; i <= n; i++)
-             {
-                 if (n % i == 0)
-                 {
-                     say++;
-                 }
-             }
-             Console.WriteLine("Ədədin bölənlərinin sayı: " + say);*/
-            #endregion
-
-            #region TASK9
-            /*Console.Write("n ededini daxil edin: ");
-            int n = int.Parse(Console.ReadLine());
-            int say = 0;
-
-            for (int i = 1; i <= n; i++)
-            {
-                if (n % i == 0 && i%2==1)
-                {
-                    say++;
-                    Console.WriteLine(i);
-                }
-                
-            }
-            Console.WriteLine("Ədədin bölənlərinin sayı: " + say);*/
-            #endregion
-
-            #region TASK10
-            /*Console.WriteLine("Ededi daxil edin");
-            int n = int.Parse(Console.ReadLine());
-            Console.WriteLine("Ededlerin siyahisi:");
-            for (int i = 100; i <= 999; i++)
-            {
-                int eded = i;
-                int cem = 0;
-                while (eded > 0)
-                {
-                    cem += eded % 10;
-                    eded /= 10;
-                }
-                if (cem == n)
-                { Console.WriteLine(i); }}*/
-
-            #endregion
-
-
-
             //DATETIME
             //task1
             /*DateTime birthday = new DateTime(2007, 09, 13);
@@ -275,8 +38,6 @@ namespace GitHub_1
                 Console.WriteLine("The current date status : False");*/
 
             //task5
-            // Verilmiş tarixə qarşı həftənin son gününü tapmaq üçün C# Sharp dilində proqram yazın. Test məlumatları: Gün daxil edin: 16
-            // Ayın daxil edilməsi: 06 Giriş ili: 2016 Gözlənilən Nəticə: Formatlaşdırılmış tarix: 16/06/2016. Yuxarıda göstərilən tarix üçün həftənin son günü: 18/06/2016
             /* Console.WriteLine("Günü daxil edin");
                int day=Convert.ToInt16(Console.ReadLine());
                Console.WriteLine("Ayı daxil edin");
@@ -321,11 +82,42 @@ namespace GitHub_1
                }*/
 
             //task6
-            //İstifadəçidən iki tarix alın (yyyy-MM-dd formatında). Bu tarixlər arasındakı fərqi gün olaraq hesablayın və çıxışda göstərin.
-           // Nümunə çıxış: Birinci tarixi daxil edin: 2024 - 01 - 01 İkinci tarixi daxil edin: 2025 - 04 - 29 Bu tarixlər arasında 484 gün fərq var.
-           /*Console.WriteLine("Birinci tarixi daxil edin (yyyy-MM-dd formatında)");
+            /*Console.WriteLine("Birinci tarixi daxil edin (yyyy-MM-dd formatında)");
+             DateTime start = Convert.ToDateTime(Console.ReadLine());
+             Console.WriteLine("Ikinci tarixi daxil edin (yyyy-MM-dd formatında)");
+             DateTime stop = Convert.ToDateTime(Console.ReadLine());
+             TimeSpan timespan;
+             timespan = stop - start;
+             if (start > stop)
+             { Console.WriteLine("Dogru tarixi daxil et");}
+             else if (stop > start)
+             {
+              Console.WriteLine($"Bu tarixlər arasında {timespan.Days} gün fərq var.");
+             }*/
+
+
+            //task7
+            /*Console.Write("Hadisənin tarixi (yyyy-MM-dd):");
+            DateTime datetime = Convert.ToDateTime(Console.ReadLine());
+            DateTime datenow = DateTime.Now;
+            TimeSpan timespan;
+            timespan = datetime - datenow;
+            if (datetime < datenow)
+            {
+
+                Console.WriteLine("Duzgun tarix daxil edin");
+            }
+            else if (datetime > datenow)
+            {
+                
+                Console.WriteLine($"Bu tarixə {timespan.TotalDays} gün qalıb.");
+                
+            }*/
+
+            //task8
+            /*Console.WriteLine("Bitmə tarixini daxil edin(yyyy-MM-dd HH:mm):");
             DateTime start = Convert.ToDateTime(Console.ReadLine());
-            Console.WriteLine("Ikinci tarixi daxil edin (yyyy-MM-dd formatında)");
+            Console.WriteLine("Başlama tarixini daxil edin(yyyy-MM-dd HH:mm):");
             DateTime stop = Convert.ToDateTime(Console.ReadLine());
             TimeSpan timespan;
             timespan = stop - start;
@@ -333,10 +125,7 @@ namespace GitHub_1
             { Console.WriteLine("Dogru tarixi daxil et");}
             else if (stop > start)
             {
-             Console.WriteLine($"Bu tarixlər arasında {timespan.Days} gün fərq var.");
-            }*/
-
-            
+                Console.WriteLine($"Hadisə müddəti:{ timespan.TotalHours} saat"); }*/
 
 
 
