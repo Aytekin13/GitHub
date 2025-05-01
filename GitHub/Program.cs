@@ -115,9 +115,9 @@ namespace GitHub_1
             }*/
 
             //task8
-            /*Console.WriteLine("Bitmə tarixini daxil edin(yyyy-MM-dd HH:mm):");
+            /*Console.WriteLine("Başlama tarixini daxil edin(yyyy-MM-dd HH:mm):");
             DateTime start = Convert.ToDateTime(Console.ReadLine());
-            Console.WriteLine("Başlama tarixini daxil edin(yyyy-MM-dd HH:mm):");
+            Console.WriteLine("Bitmə tarixini daxil edin(yyyy-MM-dd HH:mm):");
             DateTime stop = Convert.ToDateTime(Console.ReadLine());
             TimeSpan timespan;
             timespan = stop - start;
