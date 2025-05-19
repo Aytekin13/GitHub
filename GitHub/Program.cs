@@ -93,8 +93,8 @@ namespace GitHub_1
 
 
 
-            //26 27 alinmadi
-            //26.tekrarlanan sozlerin sayi BRO I DONT KNOW IT
+            //26 27 alinmadi 
+            //26.tekrarlanan sozlerin sayi 
             //Console.WriteLine("Metni daxil edin");
 
             //string metn = Console.ReadLine();
